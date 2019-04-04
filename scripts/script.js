@@ -1,9 +1,16 @@
 myApp = {};
 
+// myApp.toggleNav = () => {
+//     $('.burger-button').on('click', function () {
+//         $(this).toggleClass('cross');
+//         $('.nav-list').toggleClass('show-nav');
+//     })
+// }
+
 myApp.toggleNav = () => {
-    $('.burger-button').on('click', function () {
+    $('.burger-button').on("click", function () {
         $(this).toggleClass('cross');
-        $('.nav-list').toggleClass('show-nav');
+        $('.nav-list').slideToggle('slow');
     })
 }
 
@@ -36,14 +43,22 @@ myApp.rotateCubeBottom = () => {
     })
 }
 
-$(document).ready(function () {
-    particlesJS.load('particles-js', '../assets/particles.json');
+myApp.init = () => {
     myApp.toggleNav();
-    // $('a').smoothScroll({
-    //     speed: 1000
-    // })
     myApp.scrollNext();
     myApp.rotateCubeTop();
     myApp.rotateCubeBottom();
+}
+
+$(document).ready(function () {
+    particlesJS.load('particles-js', '../assets/particles.json');
+    myApp.init();
+    // myApp.toggleNav();
+    // $('a').smoothScroll({
+    //     speed: 1000
+    // })
+    // myApp.scrollNext();
+    // myApp.rotateCubeTop();
+    // myApp.rotateCubeBottom();
     // myApp.toggleFlip();
 });

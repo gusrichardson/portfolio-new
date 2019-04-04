@@ -224,7 +224,6 @@ section {
 .nav-bar {
   height: 80px;
   border: 2px solid red;
-  position: relative;
   overflow: hidden;
 }
 
@@ -239,11 +238,12 @@ section {
       -ms-flex-align: center;
           align-items: center;
   border: 2px solid pink;
-  height: 100%;
+  height: 100px;
   margin: 0 auto;
   padding: 0 200px;
-  position: absolute;
-  top: -100px;
+  position: fixed;
+  z-index: 5;
+  top: 0px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -260,6 +260,7 @@ section {
   top: 10px;
   right: 10px;
   padding-top: 5px;
+  z-index: 10;
 }
 
 .burger-button div {
@@ -378,41 +379,27 @@ h1 {
 
 .about-flex {
   width: 100%;
-  min-height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #toggle-flip-bottom, #toggle-flip-top {
   color: #DB5656;
-}
-
-.flip-front, .flip-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  margin: 0 auto;
-}
-
-.flip-front img, .flip-back img {
-  height: 100%;
-  width: auto;
-  margin: 0 auto;
+  cursor: default;
 }
 
 .about-text {
-  width: 70%;
+  width: calc(100% - 340px);
 }
 
 .about-cube {
-  width: 30%;
+  width: 300px;
   height: 400px;
-  background: yellow;
+  background: transparent;
   -webkit-transition: all 1s;
   transition: all 1s;
   transform-style: preserve-3d;
@@ -424,8 +411,9 @@ h1 {
 }
 
 .about-cube img {
-  height: 100%;
-  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .show-top {
@@ -440,7 +428,7 @@ h1 {
 
 .top {
   height: 400px;
-  background: pink;
+  background: transparent;
   width: 100%;
   -webkit-transform: rotateX(90deg) translateZ(200px);
           transform: rotateX(90deg) translateZ(200px);
@@ -448,27 +436,30 @@ h1 {
   top: 0px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  overflow: hidden;
 }
 
 .bottom {
   height: 400px;
   width: 100%;
-  background: cornflowerblue;
+  background: transparent;
   position: absolute;
   top: 0;
   -webkit-transform: rotateX(-90deg) translateZ(200px);
           transform: rotateX(-90deg) translateZ(200px);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  overflow: hidden;
 }
 
 .front {
   height: 400px;
   width: 100%;
-  background: red;
+  background: transparent;
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  overflow: hidden;
 }
 
 #work {
