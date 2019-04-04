@@ -1,0 +1,22 @@
+{
+    "particles": {
+        "number": {
+            "value": 10
+        },
+        "color": {
+            "value": "#A9C9DA"
+        },
+        "size": {
+            "value": 4
+        },
+        "speed": {
+            "value": 1
+        },
+        "polygon": {
+            "nb_sides": 5
+        },
+        "shape": {
+            "type": "edge"
+        }
+    }
+}

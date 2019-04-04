@@ -1,0 +1,55 @@
+html {
+    font-size: 125%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid maroon;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+section {
+    padding: 80px 0;
+}
+

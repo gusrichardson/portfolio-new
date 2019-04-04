@@ -1,0 +1,83 @@
+.nav-bar {
+    height: 80px;
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid pink;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 200px;
+    position: absolute;
+    top: -100px;
+    transition: all 1s;
+}
+
+.show-nav {
+    top: 0;
+}
+
+.burger-button {
+    height: 60px;
+    width: 60px;
+    border: 2px solid green;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding-top: 5px;
+    div {
+        background: $accent;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 5px;
+        transition: all 0.5s;
+    }
+}
+
+.burger-button.cross div:nth-child(1){
+    top: 20px;
+    transform: rotate(135deg);
+    width: 40px;
+     
+}
+
+.burger-button.cross div:nth-child(2){
+   opacity: 0;
+}
+
+.burger-button.cross div:nth-child(3){
+    // top: 18px;
+    transform: rotate(-135deg);
+    width: 40px;
+}
+
+
+.line-one {
+    width: 20px;
+    height: 5px;
+}
+
+.line-two {
+    width: 40px;
+    height: 5px;
+}
+
+.line-three {
+    width: 20px;
+    height: 5px;
+}
+
+.burger-button:hover .line-one, .burger-button:hover .line-three {
+    width: 40px;
+}
+
+
+
+
+

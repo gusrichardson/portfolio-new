@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gus Richardson Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="burger-button" tabindex="0">
+            <div class="line-one burger-line"></div>
+            <div class="line-two burger-line"></div>
+            <div class="line-three burger-line"></div>
+        </div>
+        <div class="header-wrapper wrapper" id="particles-js">
+            <div class="particles-overlay">
+                <div class="title-text">
+                    <h1>Gus Richardson</h1>
+                    <h2>Web Developer</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#about-section" class="scroll-down" aria-label="Navigate to the About section">
+            <i class="fas fa-chevron-circle-down" aria-hidden="true"></i>
+        </a>
+    </header>
+    <main>
+        <section id="about-section">
+            <div class="wrapper about-wrapper">
+                <div class="about-title">
+                    <h1>About</h1>
+                </div>
+                <div class="about-flex">
+                    <div class="about-cube">
+                        <div class="top">
+                            <img src="assets/giorgi-jars.png" alt="a batch of my Giorgi hot sauce ready for sale">
+                        </div>
+                        <div class="front">
+                            <img src="assets/headshot.jpg" alt="a headshot of me, Gus Richardson">
+                        </div>
+
+                        <div class="bottom">
+                            <img src="assets/oscar-outside.png" alt="a picture of Oscar, my brindle terrier">
+                        </div>
+
+                    </div>
+                    <div class="about-text">
+                        <p>Hi, I'm Gus</p>
+                        <p>I'm a front end web dev who's into tackling problems and bringing things together. I love
+                            funky design and creative web apps.</p>
+                        <p>If I'm not coding I'm making some of my famous hot sauce or going for a run with my main man,
+                            <a id="toggle-flip">Oscar</a>
+
+                    </div>
+                </div>
+
+            </div>
+            <a href="#work" class="scroll-down" aria-label="Navigate to the Work section">
+                <i class="fas fa-chevron-circle-down" aria-hidden="true"></i>
+            </a>
+        </section>
+        <section id="work">
+            <div class="wrapper work-wrapper">
+                <div class="work-title">
+                    <h1>Work</h1>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script src='scripts/script.js'></script>
+</body>
+
+</html>
