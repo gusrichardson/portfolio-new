@@ -23,11 +23,17 @@ myApp.toggleFlip = () => {
     })
 }
 
-myApp.rotateCube = () => {
-    $('#toggle-flip').hover(function () {
+myApp.rotateCubeTop = () => {
+    $('#toggle-flip-top').hover(function () {
         console.log('hi! How ARE YOU!');
         $('.about-cube').toggleClass('show-top');
     });
+}
+
+myApp.rotateCubeBottom = () => {
+    $('#toggle-flip-bottom').hover(function () {
+        $('.about-cube').toggleClass('show-bottom');
+    })
 }
 
 $(document).ready(function () {
@@ -37,6 +43,7 @@ $(document).ready(function () {
     //     speed: 1000
     // })
     myApp.scrollNext();
-    myApp.rotateCube();
+    myApp.rotateCubeTop();
+    myApp.rotateCubeBottom();
     // myApp.toggleFlip();
 });

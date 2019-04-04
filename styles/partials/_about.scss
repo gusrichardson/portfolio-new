@@ -1,56 +1,33 @@
 #about-section {
     min-height: 100vh;
-    border: 10px solid red;
+    border: 1px solid red;
     position: relative;
+    background: $white;
 }
 
 .about-flex {
     width: 100%;
     min-height: 40vh;
-    // border: 4px solid blue;
     display: flex;
 }
 
-.about-image-container {
-    width: 35%;
-    margin: 0 auto;
-    perspective: 900px;
-    height: 300px;
-    display: inline-block;
+// .about-image-container {
+//     width: 35%;
+//     margin: 0 auto;
+//     perspective: 900px;
+//     height: 300px;
+//     display: inline-block;
+// }
+
+#toggle-flip-bottom, #toggle-flip-top {
+    color: $accent;
 }
 
-.image-flip {
-    position: relative;
-    // background: green;
-    min-height: 100%;
-    transition: all 1s;
-    transform-style: preserve-3d;
-    display: inline-block;
-    // border: 10px solid red;
-    width: 100%;
-}
-
-.toggle-flip {
-    transform: rotateX(90deg) translateZ(100px);
-    // transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-#toggle-flip {
-    color: blue;
-    display: inline-block;
-    border: 1px solid red;
-}
-
-#toggle-flip:hover {
-    border: 1px solid blue;
-}
 
 .flip-front, .flip-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    // border: 2px solid blue;
     top: 0;
     left: 0;
     backface-visibility: hidden;
@@ -62,20 +39,12 @@
     }
 }
 
-.flip-back {
-    transform: rotateY(180deg);
-}
-
-// .flip-front img {
-//     height: 100%;
-//     width: auto;
-//     // height: 100%;
-// }
 .about-text {
     width: 70%;
 }
 
-//ABOUT CUBE 
+
+//ABOUT ROTATING CUBE
 
 .about-cube {
     width: 30%;
@@ -94,8 +63,12 @@
     }
 }
 
-.about-cube:hover {
+.show-top {
     transform: rotateX(-90deg);
+}
+
+.show-bottom {
+    transform: rotateX(90deg);
 }
 
 .top {
@@ -103,17 +76,9 @@
     background: pink;
     width: 100%;
     transform: rotateX(90deg) translateZ(200px);
-    // transform-origin: top;
     position: absolute;
     top: 0px;
     backface-visibility: hidden;
-//       -webkit-transform: rotateX(-90deg) translateZ(-100px);
-//   -moz-transform: rotateX(-90deg) translateZ(-100px);
-//   transform: rotateX(-90deg) translateZ(-100px);
-    img {
-        // transform: rotate(90deg);
-        height: 100%;
-    }
 }
 
 .bottom {
@@ -122,18 +87,9 @@
     background: cornflowerblue;
     position: absolute;
     top: 0;
-    // top: 200px;
     transform: rotateX(-90deg) translateZ(200px);
     backface-visibility: hidden;
-    // -webkit-transform: rotateX(90deg) translateZ(250px);
-    // -moz-transform: rotateX(90deg) translateZ(250px);
-    // transform: rotateX(90deg) translateZ(250px); 
 }
-
-// .bottom img {
-//     height: 100%;
-//     margin: 0 auto;
-// }
 
 .front {
     height: 400px;
@@ -141,20 +97,6 @@
     background: red;
     position: absolute;
     backface-visibility: hidden;
-    // -webkit-transform: rotateY(90deg) translateZ(100px);
-    //  -moz-transform: rotateY(90deg) translateZ(100px);
-    //  transform: rotateY(90deg) translateZ(100px);
 }
 
-// .front img {
-//     height: 100%;
-//     margin: 0 auto;
-// }
 
-.show-top {
-    // transform: rotateX(60deg);
-}
-
-.show-bottom {
-    transform: rotateX(-90deg);
-}
