@@ -43,6 +43,32 @@ myApp.rotateCubeBottom = () => {
     })
 }
 
+myApp.rotateProjects = (degrees) => {
+    $('#work-cube').css({
+        transform: `rotateY(${degrees}deg)`
+    })
+}
+
+myApp.cubeRotator = () => {
+    $('#bike-share').on('click', function (e) {
+        e.preventDefault();
+        myApp.rotateProjects(0);
+    })
+    $('#broken-tele').on('click', function (e) {
+        e.preventDefault();
+        myApp.rotateProjects(90);
+    })
+    $('#fail-gen').on('click', function (e) {
+        e.preventDefault();
+        myApp.rotateProjects(180);
+    })
+    $('#travel-pack').on('click', function (e) {
+        e.preventDefault();
+        myApp.rotateProjects(270);
+    })
+
+}
+
 myApp.init = () => {
     myApp.toggleNav();
     myApp.scrollNext();
@@ -50,15 +76,23 @@ myApp.init = () => {
     myApp.rotateCubeBottom();
 }
 
+window.onload = function () {
+    console.log('we loaded?')
+    lax.setup() // init
+
+    const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+    }
+
+    window.requestAnimationFrame(updateLax)
+}
+
 $(document).ready(function () {
+
     particlesJS.load('particles-js', '../assets/particles.json');
+    AOS.init();
     myApp.init();
-    // myApp.toggleNav();
-    // $('a').smoothScroll({
-    //     speed: 1000
-    // })
-    // myApp.scrollNext();
-    // myApp.rotateCubeTop();
-    // myApp.rotateCubeBottom();
-    // myApp.toggleFlip();
+    myApp.cubeRotator();
+
 });

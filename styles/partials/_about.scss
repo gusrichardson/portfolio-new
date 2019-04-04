@@ -58,6 +58,8 @@
     top: 0px;
     backface-visibility: hidden;
     overflow: hidden;
+    border-radius: 5px;
+    border:10px solid $dark;
 }
 
 .bottom {
@@ -69,6 +71,8 @@
     transform: rotateX(-90deg) translateZ(200px);
     backface-visibility: hidden;
      overflow: hidden;
+     border-radius: 5px;
+     border:10px solid $dark;
 }
 
 .front {
@@ -78,6 +82,8 @@
     position: absolute;
     backface-visibility: hidden;
      overflow: hidden;
+     border-radius: 5px;
+     border:10px solid $dark;
 }
 
 

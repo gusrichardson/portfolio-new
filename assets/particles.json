@@ -1,22 +1,22 @@
 {
     "particles": {
         "number": {
-            "value": 10
+            "value": 80
         },
         "color": {
             "value": "#A9C9DA"
         },
         "size": {
-            "value": 4
+            "value": 2
         },
         "speed": {
             "value": 1
         },
         "polygon": {
-            "nb_sides": 5
+            "nb_sides": 10
         },
         "shape": {
-            "type": "edge"
+            "type": "circle"
         }
     }
 }

@@ -1,3 +1,48 @@
 #work {
     min-height: 100vh;
 }
+
+.projects-nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#work-cube {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    background: grey;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 2s;
+    transform-style: preserve-3d;
+    transition: all 2s;
+}
+
+.face {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    background: white;
+    border: solid 1px red;
+}
+
+.one {
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+}
+
+.two {
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.three {
+     -webkit-transform: rotateY(180deg) translateZ(200px);
+    transform: rotateY(180deg) translateZ(200px);
+}
+
+.four {
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+    transform: rotateY(-90deg) translateZ(200px);
+}

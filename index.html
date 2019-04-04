@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gus Richardson Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -31,8 +32,8 @@
         <div class="header-wrapper wrapper" id="particles-js">
             <div class="particles-overlay">
                 <div class="title-text">
-                    <h1>Gus Richardson</h1>
-                    <h2>Web Developer</h2>
+                    <h1><span class="first-name">Gus</span> Richardson</h1>
+                    <h2>Front End Web Dev</h2>
                 </div>
             </div>
         </div>
@@ -44,7 +45,8 @@
         <section id="about-section">
             <div class="wrapper about-wrapper">
                 <div class="about-title">
-                    <h1>About</h1>
+                    <!-- <h1>About</h1> -->
+                    <h1 class="lax" data-lax-preset="spinIn-60">About</h1>
                 </div>
                 <div class="about-flex">
                     <div class="about-cube">
@@ -60,7 +62,7 @@
                         </div>
 
                     </div>
-                    <div class="about-text">
+                    <div class="about-text" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
                         <p>Hi, I'm Gus</p>
                         <p>I'm a front end web dev who's into tackling problems and bringing things together. I love
                             funky design and creative web apps.</p>
@@ -80,12 +82,35 @@
             <div class="wrapper work-wrapper">
                 <div class="work-title">
                     <h1>Work</h1>
+                    <nav class="projects-nav">
+                        <ul>
+                            <li><a href="#" id="bike-share">Bike Share</a></li>
+                            <li><a href="#" id="broken-tele">Broken Telephone</a></li>
+                            <li><a href="#" id="fail-gen">Fail Generator</a></li>
+                            <li><a href="#" id="travel-pack">Travel Packer</a></li>
+                        </ul>
+                    </nav>
+                    <div id="work-cube">
+                        <div class="face one">
+                            <h2>Bike Share</h2>
+                        </div>
+                        <div class="face two">
+                            <h2>Broken Tele</h2>
+                        </div>
+                        <div class="face three">
+                            <h2>Fail Generator</h2>
+                        </div>
+                        <div class="face four">
+                            <h2>Travel Packer</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </section>
     </main>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="node_modules/lax.js/lib/lax.min.js"></script>
     <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'
         integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>

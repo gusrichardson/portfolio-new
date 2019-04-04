@@ -26,10 +26,12 @@ h1 {
 h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    color: $accent;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    color: $dark;
 }
 
 h1, h2, h3, h4 {
@@ -43,6 +45,8 @@ ul {
 
 a {
     text-decoration: none;
+    color: $accent;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
