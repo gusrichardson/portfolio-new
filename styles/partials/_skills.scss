@@ -1,0 +1,21 @@
+#skills-section {
+    min-height: 60vh;
+    position: relative;
+}
+
+.toolbox-container {
+    height: 160px;
+    border: 4px solid cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+figure i {
+    font-size: 3rem;
+    color: $blue;
+}
+figcaption {
+    color: $blue;
+}

@@ -2,6 +2,7 @@
     min-height: 100vh;
     border: 1px solid red;
     position: relative;
+    // background: $dark;
     background: $white;
 }
 
@@ -9,6 +10,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background: $white;
 }
 
 #toggle-flip-bottom, #toggle-flip-top {
@@ -16,8 +18,17 @@
     cursor: default;
 }
 
+.about-title {
+    background: $white;
+    h1 {
+        text-shadow: 1px 1px $dark,
+        2px 2px $dark;
+    }
+}
+
 .about-text {
     width: calc(100% - 340px);
+    background: $white;
 }
 
 

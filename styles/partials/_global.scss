@@ -9,6 +9,7 @@ html {
 
 body {
     line-height: 1.6;
+    background: $white;
 }
 
 .wrapper {
@@ -49,6 +50,10 @@ a {
     font-family: 'Lato', sans-serif;
 }
 
+i {
+    animation: down 2s infinite;
+}
+
 img {
     display: block;
 }
@@ -57,3 +62,14 @@ section {
     padding: 80px 0;
 }
 
+@keyframes down {
+    0% {
+        top: -80px;
+    }
+    50% {
+        top: -70px;
+    }
+    100% {
+        top: -80px;
+    }
+}

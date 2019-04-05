@@ -62,5 +62,8 @@ h1 {
     text-align: center;
     color: $accent;
     font-size: 2rem;
+    i {
+        position: absolute;
+    }
     // border: 2px solid red;
 }

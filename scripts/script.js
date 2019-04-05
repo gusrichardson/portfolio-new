@@ -1,12 +1,6 @@
 myApp = {};
 
-// myApp.toggleNav = () => {
-//     $('.burger-button').on('click', function () {
-//         $(this).toggleClass('cross');
-//         $('.nav-list').toggleClass('show-nav');
-//     })
-// }
-
+// NAVIGATION FUNCTIONS
 myApp.toggleNav = () => {
     $('.burger-button').on("click", function () {
         $(this).toggleClass('cross');
@@ -23,12 +17,7 @@ myApp.scrollNext = () => {
     })
 }
 
-myApp.toggleFlip = () => {
-    $('#toggle-flip').hover(function () {
-        console.log('oh hey der');
-        $('.image-flip').toggleClass('toggle-flip');
-    })
-}
+//ABOUT ME FLIP CARD TRIGGER
 
 myApp.rotateCubeTop = () => {
     $('#toggle-flip-top').hover(function () {
@@ -43,42 +32,73 @@ myApp.rotateCubeBottom = () => {
     })
 }
 
+// ROTATING WORK CUBE
+
 myApp.rotateProjects = (degrees) => {
     $('#work-cube').css({
         transform: `rotateY(${degrees}deg)`
     })
 }
 
-myApp.cubeRotator = () => {
-    $('#bike-share').on('click', function (e) {
-        e.preventDefault();
-        myApp.rotateProjects(0);
-    })
-    $('#broken-tele').on('click', function (e) {
-        e.preventDefault();
-        myApp.rotateProjects(90);
-    })
-    $('#fail-gen').on('click', function (e) {
-        e.preventDefault();
-        myApp.rotateProjects(180);
-    })
-    $('#travel-pack').on('click', function (e) {
-        e.preventDefault();
-        myApp.rotateProjects(270);
-    })
+// myApp.cubeRotator = () => {
+//     $('#bike-share').on('click', function (e) {
+//         e.preventDefault();
+//         myApp.rotateProjects(0);
+//     })
+//     $('#broken-tele').on('click', function (e) {
+//         e.preventDefault();
+//         myApp.rotateProjects(90);
+//     })
+//     $('#fail-gen').on('click', function (e) {
+//         e.preventDefault();
+//         myApp.rotateProjects(180);
+//     })
+//     $('#travel-pack').on('click', function (e) {
+//         e.preventDefault();
+//         myApp.rotateProjects(270);
+//     })
 
+// }
+
+myApp.steerCube = function () {
+    let counter = 0;
+    $('.steer-left').on('click', function () {
+        counter -= 90;
+        let rotation = `rotateY(${counter}deg)`;
+        $('#work-cube').css({ 'transform': rotation })
+    })
+    $('.steer-right').on('click', function () {
+        counter += 90;
+        let rotation = `rotateY(${counter}deg)`;
+        $('#work-cube').css({ 'transform': rotation })
+    })
+    //Adapted from a CodePen by James Garrett https://codepen.io/jamesgarrett/pen/ZaqJLE
+};
+
+
+myApp.steerCubeRight = () => {
+    $('.steer-right').on('click', function () {
+        $('#work-cube').css({
+            transform: `rotateY(${180}deg)`
+        })
+    })
 }
+
+//END ROTATING WORK CUBE
 
 myApp.init = () => {
     myApp.toggleNav();
     myApp.scrollNext();
     myApp.rotateCubeTop();
     myApp.rotateCubeBottom();
+    // myApp.cubeRotator();
+    myApp.steerCube();
+    // myApp.steerCubeLeft();
+    // myApp.steerCubeRight();
 }
 
 window.onload = function () {
-    console.log('we loaded?')
-    lax.setup() // init
+    lax.setup() // initialize LAX animations on load
 
     const updateLax = () => {
         lax.update(window.scrollY)
@@ -93,6 +113,5 @@ $(document).ready(function () {
     particlesJS.load('particles-js', '../assets/particles.json');
     AOS.init();
     myApp.init();
-    myApp.cubeRotator();
 
 });
