@@ -1,7 +1,5 @@
 .nav-bar {
     height: 80px;
-    // border: 2px solid red;
-    // position: relative;
     overflow: hidden;
 }
 
@@ -12,16 +10,15 @@
     justify-content: space-around;
     align-items: center;
     background: RGBA(6, 19, 35, 1);
-    // background: RGBA(169, 201, 218, 0.9);
-    // background: RGBA(241, 241, 241, 0.9);
-    // border: 2px solid pink;
     height: 70px;
-    // padding: 0 200px;
     position: fixed;
     z-index: 20;
     li {
         display: inline-block;
         margin: 20px 40px;
+        a {
+            transition: all 0.3s;
+        }
     }
 }
 
@@ -32,9 +29,8 @@
 .burger-button {
     height: 60px;
     width: 60px;
-    // border: 2px solid green;
     position: fixed;
-    top: 10px;
+    top: 8px;
     right: 10px;
     padding-top: 5px;
     z-index: 30;
@@ -59,7 +55,6 @@
 }
 
 .burger-button.cross div:nth-child(3){
-    // top: 18px;
     transform: rotate(-135deg);
     width: 40px;
 }
@@ -84,6 +79,17 @@
     width: 40px;
 }
 
+//HOVER STATE
+
+.nav-list li:hover a {
+    color: $white;
+    text-decoration: underline;
+}
+
+.nav-list a:focus {
+    color: $white;
+    text-decoration: underline;
+}
 
 
 

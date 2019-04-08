@@ -15,6 +15,12 @@ myApp.scrollNext = () => {
             scrollTop: target.offset().top
         }, "slow")
     })
+    $('a[href*="#"]').on('click', function () {
+        target = $(this.hash);
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, "slow")
+    })
 }
 
 //ABOUT ME FLIP CARD TRIGGER
@@ -40,26 +46,6 @@ myApp.rotateProjects = (degrees) => {
     })
 }
 
-// myApp.cubeRotator = () => {
-//     $('#bike-share').on('click', function (e) {
-//         e.preventDefault();
-//         myApp.rotateProjects(0);
-//     })
-//     $('#broken-tele').on('click', function (e) {
-//         e.preventDefault();
-//         myApp.rotateProjects(90);
-//     })
-//     $('#fail-gen').on('click', function (e) {
-//         e.preventDefault();
-//         myApp.rotateProjects(180);
-//     })
-//     $('#travel-pack').on('click', function (e) {
-//         e.preventDefault();
-//         myApp.rotateProjects(270);
-//     })
-
-// }
-
 myApp.steerCube = function () {
     let counter = 0;
     $('.steer-left').on('click', function () {
@@ -72,17 +58,15 @@ myApp.steerCube = function () {
         let rotation = `rotateY(${counter}deg)`;
         $('#work-cube').css({ 'transform': rotation })
     })
+    $('.steer-top').on('click', function () {
+        $('#work-cube').css({ transform: "rotateX(90deg)" });
+    })
+    $('.zero').on('click', function () {
+        $('#work-cube').css({ transform: "rotateX(0deg)" });
+    })
     //Adapted from a CodePen by James Garrett https://codepen.io/jamesgarrett/pen/ZaqJLE
 };
 
-
-myApp.steerCubeRight = () => {
-    $('.steer-right').on('click', function () {
-        $('#work-cube').css({
-            transform: `rotateY(${180}deg)`
-        })
-    })
-}
 
 //END ROTATING WORK CUBE
 
@@ -91,10 +75,7 @@ myApp.init = () => {
     myApp.scrollNext();
     myApp.rotateCubeTop();
     myApp.rotateCubeBottom();
-    // myApp.cubeRotator();
     myApp.steerCube();
-    // myApp.steerCubeLeft();
-    // myApp.steerCubeRight();
 }
 
 window.onload = function () {

@@ -1,7 +1,116 @@
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-title h1 {
+    text-shadow: 1px 1px $dark,
+    2px 2px $dark;
+}
+
 .note {
-    width: 48%;
+    width: 500px;
+    position: relative;
+    background: $lightblue;
+    border: 10px solid $blue;
+    padding: 20px;
 }
 
 .form-container {
-    width: 48%;
+    width: 500px;
+    text-align: center;
+    border: 10px solid $blue;
+    background: $lightblue;
+    //  h2 {
+    //     position: absolute;
+    //     top: -50px;
+    //     left: 80px;
+    // }
 }
+
+.contact-wrapper {
+    
+}
+
+.float-name, .float-email, .float-message {
+    position: relative;
+    width: 400px;
+    margin: 25px auto;
+    input {
+        width: 400px;
+        height: 40px;
+        border: none;
+        padding: 5px;
+        background: $blue;
+        color: $white;
+        transition: all 0.3s;
+    }
+    textarea {
+        border: none;
+        padding: 5px;
+        background: $blue;
+        color: $white;
+        transition: all 0.3s;
+    }
+}
+
+#user-note {
+    width: 400px;
+}
+
+.float-name label, .float-email label, .float-message label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.float-name input:focus ~ label, .float-email input:focus ~ label {
+    opacity: 1;
+    top: -24px;
+    color: $blue;
+}
+
+.float-name input:focus, .float-email input:focus, .float-message textarea:focus {
+    background: $white;
+    border-bottom: 4px solid $blue;
+    color: $dark;
+}
+
+
+.float-message textarea:focus ~ label {
+    opacity: 1;
+    top: -25px;
+    color: $blue;
+}
+
+.form-button {
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+#hand {
+    position: absolute;
+    animation: hand 2s infinite;
+    font-size: 4rem;
+    // color: $accent;
+}
+
+@keyframes hand {
+    0% {
+        bottom: 120px;
+        left: 42%;
+    }
+    50% {
+        bottom: 120px;
+        left: 40%;
+    }
+    100% {
+        bottom: 120px;
+        left: 42%;
+    }
+};

@@ -16,14 +16,25 @@
 </head>
 
 <body>
-    <header>
+    <header id="home-section">
+        <div class="social">
+            <ul>
+                <li><a href="https://medium.com/@gusrichardson1"
+                        aria-label="link to my blogging profile on Medium dot com"><i class="fab fa-medium"></i></a>
+                </li>
+                <li><a href="https://twitter.com/webDevGus" aria-label="link to my Twitter profile"><i
+                            class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://github.com/gusrichardson" aria-label="link to my GitHub profile"><i
+                            class="fab fa-github-square"></i></i></a></li>
+            </ul>
+        </div>
         <nav class="nav-bar">
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
         <div class="burger-button" tabindex="0">
@@ -85,24 +96,31 @@
                 <div class="work-title">
                     <h1 class="lax" data-lax-preset="spinIn-10">Work</h1>
                     <div class="work-flex">
-                        <div class="work-desc">
-                            <p>Here are a collection of applications I have made either alone or with partners. Click
+                        <div class="work-desc" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                            <p>Here are a collection of applications I have made either alone or with partners.</p>
+                            <p> Click
                                 the Left or Rights sides of the cube to navigate through the projects or click the
                                 buttons to view them Live or on GitHub</p>
                         </div>
                         <div class="cube-wrapper">
                             <div id="work-cube">
-                                <div class="face zero"></div>
+                                <div class="face zero">
+                                    <video autoplay controls src="assets/AJI GOURMET!.mp4" id="aji"></video>
+                                </div>
                                 <div class="face one">
                                     <img src="assets/bike.jpg" alt="a screenshot for a bike-share app">
                                     <div class="face-overlay">
                                         <div class="steer-cube">
+                                            <div class="steer-top"></div>
                                             <div class="steer-left left-one"></div>
                                             <div class="steer-right right-one"></div>
                                         </div>
                                         <div class="button-container">
-                                            <button class="live-button">View Live</button>
-                                            <button class="git-button">GitHub</button>
+                                            <button class="git-button"><a
+                                                    href="https://hackeryoutorontobikeshare.github.io/TorontoBikeShareRaces/">View
+                                                    Live</a></button>
+                                            <button class="git-button"><a
+                                                    href="https://github.com/hackeryoutorontobikeshare/TorontoBikeShareRaces">GitHub</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -110,12 +128,16 @@
                                     <img src="assets/travel.jpg" alt="screenshot of the Travel Packer app">
                                     <div class="face-overlay">
                                         <div class="steer-cube">
+                                            <div class="steer-top"></div>
                                             <div class="steer-left left-two"></div>
                                             <div class="steer-right"></div>
                                         </div>
                                         <div class="button-container">
-                                            <button class="live-button">View Live</button>
-                                            <button class="git-button">GitHub</button>
+                                            <button class="git-button"><a
+                                                    href="https://gusrichardson.github.io/gusRichardsonProject05/">View
+                                                    Live</a></button>
+                                            <button class="git-button"><a
+                                                    href="https://github.com/gusrichardson/gusRichardsonProject05">GitHub</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -123,12 +145,16 @@
                                     <img src="assets/fail.jpg" alt="screenshot of the Fail Generator app">
                                     <div class="face-overlay">
                                         <div class="steer-cube">
+                                            <div class="steer-top"></div>
                                             <div class="steer-left"></div>
                                             <div class="steer-right"></div>
                                         </div>
                                         <div class="button-container">
-                                            <button class="live-button">View Live</button>
-                                            <button class="git-button">GitHub</button>
+                                            <button class="git-button"><a
+                                                    href="https://gusrichardson.github.io/gus-richardson-project03/">View
+                                                    Live</a></button>
+                                            <button class="git-button"><a
+                                                    href="https://github.com/gusrichardson/gus-richardson-project03">GitHub</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -136,31 +162,35 @@
                                     <img src="assets/broken-tel.png" alt="screenshot of the Broken Telephone Quiz app">
                                     <div class="face-overlay">
                                         <div class="steer-cube">
+                                            <div class="steer-top"></div>
                                             <div class="steer-left"></div>
                                             <div class="steer-right"></div>
                                         </div>
                                         <div class="button-container">
-                                            <button class="live-button">View Live</button>
-                                            <button class="git-button">GitHub</button>
+
+                                            <button class="live-button"><a
+                                                    href="https://agencydustinbradleygusrichardson.github.io/project4GusRichardsonDustinBradley/">View
+                                                    Live</a></button>
+                                            <button class="git-button"><a
+                                                    href="https://github.com/agencydustinbradleygusrichardson/project4GusRichardsonDustinBradley">GitHub</a></button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="face five"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <a href="#about-section" class="scroll-down" aria-label="Navigate to the Skills section">
-                <i class="fas fa-chevron-circle-down" aria-hidden="true"></i>
-            </a>
+                <a href="#skills-section" class="scroll-down" aria-label="Navigate to the Skills section"
+                    id="light-arrow">
+                    <i class="fas fa-chevron-circle-down" aria-hidden="true"></i>
+                </a>
         </section>
         <section id="skills-section">
             <div class="wrapper skills-wrapper">
                 <div class="skills-title">
-                    <h1>Tool Belt</h1>
+                    <h1 class="lax" data-lax-preset="spinIn-10">Tool Belt</h1>
                 </div>
-                <div class="toolbox-container">
+                <div class="toolbox-container" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
                     <figure>
                         <i class="fab fa-html5" alt="the HTML5 logo"></i>
                         <figcaption>HTML5</figcaption>
@@ -194,22 +224,46 @@
         <section id="contact-section">
             <div class="wrapper contact-wrapper">
                 <div class="contact-title">
-                    <h1>Contact</h1>
+                    <h1 class="lax" data-lax-preset="spinIn-10">Contact</h1>
                 </div>
                 <div class="contact-flex">
-                    <div class="note">
-                        <p>Thanks for checking out my portfolio!</p>
-                        <p>If you're interested in working together drop me a line at gusrichardson1@gmail.com or leave
-                            me a note in the form next door</p><i class="far fa-hand-point-right"></i>
+                    <div class="note" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                        <h2>Thank you!</h2>
+                        <p>I appreciate you checking out my portfolio!</p>
+                        <p>If you're interested in working together why not shoot me an e-mail or leave
+                            a note in the form next door.</p>
+                        <p>E-mail: gusrichardson1@gmail.com</p>
+                        <p>Mobile: 647-379-1174</p>
+                        <i class="far fa-hand-point-right" id="hand"></i>
                     </div>
-                    <div class="form-container">
-                        <form action="POST"></form>
+                    <div class="form-container" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                        <form action="http://www.focuspocus.io/magic/a2f64bf95168a0cda50ad753eab8ea9c" class="floatForm"
+                            method="POST">
+                            <h2 id="form-title">Get in Touch</h2>
+                            <div class="float-name">
+                                <input name="user-name" type="text" id="user-name" placeholder="Your name">
+                                <label for="user-name" id="name-label">Your name</label>
+                            </div>
+                            <div class="float-email">
+                                <input name="user-email" type="email" id="user-email" placeholder="Your e-mail">
+                                <label for="user-email" id="email-label">Your e-mail</label>
+                            </div>
+                            <div class="float-message">
+                                <textarea name="userNote" id="user-note" cols="28" rows="10"
+                                    placeholder="Write message"></textarea>
+                                <label for="user-note">Write message</label>
+                            </div>
+                            <button class="form-button">Send Note!</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
+    <!-- END OF MAIN CONTENT -->
+    <footer>
+        <p>Copyright © 2019 Gus Richardson </p>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="node_modules/lax.js/lib/lax.min.js"></script>
     <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>

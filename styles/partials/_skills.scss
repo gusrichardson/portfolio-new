@@ -3,9 +3,13 @@
     position: relative;
 }
 
+.skills-wrapper {
+    background: $dark;
+}
+
 .toolbox-container {
     height: 160px;
-    border: 4px solid cornflowerblue;
+    // border: 4px solid cornflowerblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,8 +18,8 @@
 
 figure i {
     font-size: 3rem;
-    color: $blue;
+    color: $accent;
 }
 figcaption {
-    color: $blue;
+    color: $accent;
 }

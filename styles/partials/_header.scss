@@ -5,6 +5,30 @@ header {
     position: relative;
 }
 
+.social {
+    width: 80px;
+    height: 140px;
+    position: fixed;
+    z-index: 20;
+    top: calc(50% - 70px);
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            font-size: 1.5rem;
+            color: $dark;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.social i:hover {
+    color: $accent;
+}
+
 #particles-js {
     min-height: 400px;
     max-height: 500px;
@@ -53,17 +77,4 @@ h1 {
     font-size: 3.5rem;
     text-shadow: 1px 1px $white,
     2px 2px $white;
-}
-
-.scroll-down {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: $accent;
-    font-size: 2rem;
-    i {
-        position: absolute;
-    }
-    // border: 2px solid red;
 }
