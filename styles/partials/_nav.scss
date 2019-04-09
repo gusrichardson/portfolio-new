@@ -79,16 +79,38 @@
     width: 40px;
 }
 
+.nav-list a {
+    position: relative;
+    &:after {
+        bottom: 0;
+        content: "";
+        height: 2px;
+        width: 0;
+        left: 50%;
+        position: absolute;
+        background: $accent;
+        transition: all 0.3s;
+    }
+}
+//adapted from https://codepen.io/grich/pen/JVErBo
+
 //HOVER STATE
 
 .nav-list li:hover a {
     color: $white;
-    text-decoration: underline;
+      &:after {
+        width: 100%;
+        left: 0;
+    }
+ 
 }
 
 .nav-list a:focus {
     color: $white;
-    text-decoration: underline;
+    &:after {
+        width: 100%;
+        left: 0;
+    }
 }
 
 

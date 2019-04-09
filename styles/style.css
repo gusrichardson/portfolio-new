@@ -391,14 +391,38 @@ button:hover {
   width: 40px;
 }
 
+.nav-list a {
+  position: relative;
+}
+
+.nav-list a:after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  width: 0;
+  left: 50%;
+  position: absolute;
+  background: #DB5656;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .nav-list li:hover a {
   color: #F1F1F1;
-  text-decoration: underline;
+}
+
+.nav-list li:hover a:after {
+  width: 100%;
+  left: 0;
 }
 
 .nav-list a:focus {
   color: #F1F1F1;
-  text-decoration: underline;
+}
+
+.nav-list a:focus:after {
+  width: 100%;
+  left: 0;
 }
 
 header {
@@ -409,10 +433,10 @@ header {
 
 .social {
   width: 80px;
-  height: 140px;
+  height: 180px;
   position: fixed;
   z-index: 20;
-  top: calc(50% - 70px);
+  top: calc(50% - 90px);
 }
 
 .social ul {
@@ -515,7 +539,7 @@ h1 {
   background: #F1F1F1;
 }
 
-#toggle-flip-bottom, #toggle-flip-top {
+#toggle-oscar, #toggle-giorgi {
   color: #DB5656;
   cursor: default;
 }
@@ -536,33 +560,14 @@ h1 {
 .about-cube {
   width: 400px;
   height: 400px;
-  background: transparent;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   position: relative;
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
-  border: 10px solid #A9C9DA;
+  border: 10px solid #061323;
   border-radius: 5px;
 }
 
 .about-cube img {
   height: auto;
   width: 100%;
-  overflow: hidden;
-}
-
-.show-top {
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
-}
-
-.show-bottom {
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
 }
 
 #giorgi {
@@ -577,48 +582,6 @@ h1 {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.top {
-  height: 400px;
-  background: transparent;
-  width: 100%;
-  -webkit-transform: rotateX(90deg) translateZ(200px);
-          transform: rotateX(90deg) translateZ(200px);
-  position: absolute;
-  top: 0px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 10px solid #061323;
-}
-
-.bottom {
-  height: 400px;
-  width: 100%;
-  background: transparent;
-  position: absolute;
-  top: 0;
-  -webkit-transform: rotateX(-90deg) translateZ(200px);
-          transform: rotateX(-90deg) translateZ(200px);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 10px solid #061323;
-}
-
-.front {
-  height: 400px;
-  width: 100%;
-  background: transparent;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 10px solid #061323;
 }
 
 #work {
@@ -828,8 +791,7 @@ figcaption {
 .note {
   width: 500px;
   position: relative;
-  background: #A9C9DA;
-  border: 10px solid #49738D;
+  border: 10px solid #061323;
   padding: 20px;
 }
 
@@ -841,8 +803,7 @@ figcaption {
 .form-container {
   width: 500px;
   text-align: center;
-  border: 10px solid #49738D;
-  background: #A9C9DA;
+  border: 10px solid #061323;
   padding: 20px;
 }
 
@@ -888,11 +849,12 @@ figcaption {
 .float-name input:focus ~ label, .float-email input:focus ~ label {
   opacity: 1;
   top: -24px;
-  color: #49738D;
+  color: #DB5656;
 }
 
 .float-name input:focus, .float-email input:focus, .float-message textarea:focus {
   background: #F1F1F1;
+  background: #A9C9DA;
   border-bottom: 4px solid #49738D;
   color: #061323;
 }
@@ -901,6 +863,7 @@ figcaption {
   opacity: 1;
   top: -25px;
   color: #49738D;
+  color: #DB5656;
 }
 
 .form-button {

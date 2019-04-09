@@ -25,26 +25,13 @@ myApp.scrollNext = () => {
 
 //ABOUT ME FLIP CARD TRIGGER
 
-// myApp.rotateCubeTop = () => {
-//     $('#toggle-flip-top').hover(function () {
-//         console.log('hi! How ARE YOU!');
-//         $('.about-cube').toggleClass('show-top');
-//     });
-// }
-
-// myApp.rotateCubeBottom = () => {
-//     $('#toggle-flip-bottom').hover(function () {
-//         $('.about-cube').toggleClass('show-bottom');
-//     })
-// }
-
 myApp.toggleHotSauce = () => {
-    $('#toggle-flip-top').hover(function () {
+    $('#toggle-giorgi').hover(function () {
         $('.about-cube').find('.image-one').fadeToggle(800);
     })
 }
 myApp.toggleOscar = () => {
-    $('#toggle-flip-bottom').hover(function () {
+    $('#toggle-oscar').hover(function () {
         $('.about-cube').find('.image-two').fadeToggle(800);
     })
 }
@@ -84,9 +71,9 @@ myApp.steerCube = function () {
 myApp.init = () => {
     myApp.toggleNav();
     myApp.scrollNext();
-    // myApp.rotateCubeTop();
-    // myApp.rotateCubeBottom();
     myApp.steerCube();
+    myApp.toggleHotSauce();
+    myApp.toggleOscar();
 }
 
 window.onload = function () {
@@ -105,7 +92,4 @@ $(document).ready(function () {
     particlesJS.load('particles-js', '../assets/particles.json');
     AOS.init();
     myApp.init();
-    myApp.toggleHotSauce();
-    myApp.toggleOscar();
-
 });

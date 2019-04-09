@@ -11,8 +11,9 @@
 .note {
     width: 500px;
     position: relative;
-    background: $lightblue;
-    border: 10px solid $blue;
+    // background: $lightblue;
+    // border: 10px solid $blue;
+    border: 10px solid $dark;
     padding: 20px;
     h2 {
         text-align: center;
@@ -23,8 +24,9 @@
 .form-container {
     width: 500px;
     text-align: center;
-    border: 10px solid $blue;
-    background: $lightblue;
+    border: 10px solid $dark;
+    // border: 10px solid $blue;
+    // background: $lightblue;
     padding: 20px;
     //  h2 {
     //     position: absolute;
@@ -75,11 +77,13 @@
 .float-name input:focus ~ label, .float-email input:focus ~ label {
     opacity: 1;
     top: -24px;
-    color: $blue;
+    // color: $blue;
+    color: $accent;
 }
 
 .float-name input:focus, .float-email input:focus, .float-message textarea:focus {
     background: $white;
+    background: $lightblue;
     border-bottom: 4px solid $blue;
     color: $dark;
 }
@@ -89,6 +93,7 @@
     opacity: 1;
     top: -25px;
     color: $blue;
+    color: $accent;
 }
 
 .form-button {

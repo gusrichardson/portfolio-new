@@ -11,7 +11,7 @@
     background: $white;
 }
 
-#toggle-flip-bottom, #toggle-flip-top {
+#toggle-oscar, #toggle-giorgi {
     color: $accent;
     cursor: default;
 }
@@ -35,29 +35,13 @@
 .about-cube {
     width: 400px;
     height: 400px;
-    background: transparent;
-    transition: all 1s;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
     position: relative;
-    transform: rotateX(0deg);
-    border: 10px solid $lightblue;
+    border: 10px solid $dark;
     border-radius: 5px;
     img {
         height: auto;
         width: 100%;
-        overflow: hidden;
-        // margin: 0 auto;
     }
-}
-
-.show-top {
-    transform: rotateX(-90deg);
-}
-
-.show-bottom {
-    transform: rotateX(90deg);
 }
 
 #giorgi {
@@ -73,42 +57,4 @@
     top: 0;
     right: 0;
 }
-
-.top {
-    height: 400px;
-    background: transparent;
-    width: 100%;
-    transform: rotateX(90deg) translateZ(200px);
-    position: absolute;
-    top: 0px;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 5px;
-    border:10px solid $dark;
-}
-
-.bottom {
-    height: 400px;
-    width: 100%;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    transform: rotateX(-90deg) translateZ(200px);
-    backface-visibility: hidden;
-     overflow: hidden;
-     border-radius: 5px;
-     border:10px solid $dark;
-}
-
-.front {
-    height: 400px;
-    width: 100%;
-    background: transparent;
-    position: absolute;
-    backface-visibility: hidden;
-     overflow: hidden;
-     border-radius: 5px;
-     border:10px solid $dark;
-}
-
 
