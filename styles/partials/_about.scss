@@ -77,3 +77,29 @@
     right: 0;
 }
 
+//MEDIA QUERIES 
+
+@media screen and (max-width: 1100px) {
+    .about-title h1:after {
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .about-text {
+        width: calc(100% - 420px);
+    }
+   
+}
+
+@media screen and (max-width: 1000px) {
+    .about-text {
+        width: calc(100% - 370px);
+    }
+    .about-cube {
+        width: 350px;
+        height: 350px;
+    }
+   
+}
+

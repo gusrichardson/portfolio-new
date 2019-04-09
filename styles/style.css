@@ -190,6 +190,8 @@ h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 3rem;
+  color: #DB5656;
+  text-shadow: 1px 1px #F1F1F1;
 }
 
 h2 {
@@ -512,6 +514,12 @@ header {
   text-align: left;
 }
 
+.title-text h1 {
+  color: #DB5656;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px #F1F1F1, 2px 2px #F1F1F1;
+}
+
 .title-text h2 {
   color: #F1F1F1;
 }
@@ -522,10 +530,16 @@ header {
   line-height: 3rem;
 }
 
-h1 {
-  color: #DB5656;
-  font-size: 3.5rem;
-  text-shadow: 1px 1px #F1F1F1, 2px 2px #F1F1F1;
+@media screen and (max-width: 1100px) {
+  .social {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    margin: 0 50px;
+  }
 }
 
 #about-section {
@@ -604,6 +618,28 @@ h1 {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .about-title h1:after {
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about-text {
+    width: calc(100% - 420px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-text {
+    width: calc(100% - 370px);
+  }
+  .about-cube {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 #work {
