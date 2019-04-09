@@ -5,13 +5,29 @@
 
 .skills-wrapper {
     background: $dark;
+    box-shadow: 1px 1px 5px $dark;
+}
+
+.skills-title h1 {
+    position: relative;
+    display: inline-block;
+         &:after {
+            position: absolute;
+            content: "";
+            top: 55%;
+            right: -45%;
+            height: 6px;
+            width: 100px;
+            border-radius: 5%;
+            background: $white;
+        }
 }
 
 .toolbox-container {
     height: 160px;
     // border: 4px solid cornflowerblue;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }

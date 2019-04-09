@@ -7,6 +7,19 @@
         text-shadow: 1px 1px $white,
         2px 2px $white;
         margin-bottom: 40px;
+        position: relative;
+        // width: 50%;
+        // display: inline-block;
+          &:after {
+            position: absolute;
+            content: "";
+            top: 55%;
+            left: 18%;
+            height: 6px;
+            width: 100px;
+            border-radius: 5%;
+            background: $white;
+        }
     }
 }
 
@@ -14,6 +27,7 @@
     perspective: 200px;
     background: $dark;
     padding-bottom: 40px;
+    box-shadow: 1px 1px 5px $dark;
 }
 
 .work-flex {
@@ -24,6 +38,7 @@
 
 .work-desc {
     width: 50%;
+    // padding: 0px 40px;
     // border: 4px solid cornflowerblue;
     p {
         color: $accent;
@@ -81,7 +96,6 @@
     // width: 360px;
     width: 270px;
     background: white;
-    // border: solid 1px red;
     margin: 0 auto;
     border-radius: 5px;
     margin: 0;
@@ -166,4 +180,11 @@
 
 .live-button {
     margin: 0 auto;
+}
+
+#reset-cube {
+    position: absolute;
+    right: 20%;
+    top: 60px;
+    display: none;
 }

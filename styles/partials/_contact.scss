@@ -6,15 +6,24 @@
 .contact-title h1 {
     text-shadow: 1px 1px $dark,
     2px 2px $dark;
+    position: relative;
+    &:after {
+          position: absolute;
+            content: "";
+            top: 55%;
+            left: 24%;
+            height: 6px;
+            width: 100px;
+            border-radius: 5%;
+            background: $blue;
+    }
 }
 
 .note {
     width: 500px;
     position: relative;
-    // background: $lightblue;
-    // border: 10px solid $blue;
-    border: 10px solid $dark;
-    padding: 20px;
+     box-shadow: 1px 1px 5px $dark;
+    padding:40px;
     h2 {
         text-align: center;
         margin-bottom: 15px;
@@ -24,15 +33,8 @@
 .form-container {
     width: 500px;
     text-align: center;
-    border: 10px solid $dark;
-    // border: 10px solid $blue;
-    // background: $lightblue;
-    padding: 20px;
-    //  h2 {
-    //     position: absolute;
-    //     top: -50px;
-    //     left: 80px;
-    // }
+     box-shadow: 1px 1px 5px $dark;
+    padding: 40px;
 }
 
 .contact-wrapper {
@@ -107,7 +109,7 @@
     position: absolute;
     animation: hand 2s infinite;
     font-size: 2rem;
-    // color: $accent;
+    color: $blue;
 }
 
 .accent {

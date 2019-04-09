@@ -18,15 +18,33 @@
 
 .about-title {
     background: $white;
+    // position: relative;
+    // display: inline-block;
     h1 {
         text-shadow: 1px 1px $dark,
         2px 2px $dark;
+        position: relative;
+        // display: inline-block;
+        &:after {
+            position: absolute;
+            content: "";
+            top: 55%;
+            left: 20%;
+            height: 6px;
+            width: 100px;
+            border-radius: 5%;
+            background: $blue;
+        }
     }
 }
 
 .about-text {
     width: calc(100% - 450px);
     background: $white;
+    // border: 10px solid $dark;
+    padding: 40px;
+    box-shadow: 1px 1px 5px $dark;
+    // background: white;
 }
 
 
@@ -36,7 +54,8 @@
     width: 400px;
     height: 400px;
     position: relative;
-    border: 10px solid $dark;
+     box-shadow: 1px 1px 5px $dark;
+    // border: 10px solid $dark;
     border-radius: 5px;
     img {
         height: auto;

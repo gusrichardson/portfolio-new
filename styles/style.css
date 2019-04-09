@@ -483,6 +483,8 @@ header {
   position: relative;
   background: #061323;
   border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px #061323;
+          box-shadow: 1px 1px 10px #061323;
 }
 
 .header-wrapper .particles-overlay {
@@ -508,6 +510,10 @@ header {
   -webkit-box-shadow: 1px 1px 40px 40px #061323;
           box-shadow: 1px 1px 40px 40px #061323;
   text-align: left;
+}
+
+.title-text h2 {
+  color: #F1F1F1;
 }
 
 .first-name {
@@ -550,18 +556,34 @@ h1 {
 
 .about-title h1 {
   text-shadow: 1px 1px #061323, 2px 2px #061323;
+  position: relative;
+}
+
+.about-title h1:after {
+  position: absolute;
+  content: "";
+  top: 55%;
+  left: 20%;
+  height: 6px;
+  width: 100px;
+  border-radius: 5%;
+  background: #49738D;
 }
 
 .about-text {
   width: calc(100% - 450px);
   background: #F1F1F1;
+  padding: 40px;
+  -webkit-box-shadow: 1px 1px 5px #061323;
+          box-shadow: 1px 1px 5px #061323;
 }
 
 .about-cube {
   width: 400px;
   height: 400px;
   position: relative;
-  border: 10px solid #061323;
+  -webkit-box-shadow: 1px 1px 5px #061323;
+          box-shadow: 1px 1px 5px #061323;
   border-radius: 5px;
 }
 
@@ -593,6 +615,18 @@ h1 {
 #work h1 {
   text-shadow: 1px 1px #F1F1F1, 2px 2px #F1F1F1;
   margin-bottom: 40px;
+  position: relative;
+}
+
+#work h1:after {
+  position: absolute;
+  content: "";
+  top: 55%;
+  left: 18%;
+  height: 6px;
+  width: 100px;
+  border-radius: 5%;
+  background: #F1F1F1;
 }
 
 .work-wrapper {
@@ -600,6 +634,8 @@ h1 {
           perspective: 200px;
   background: #061323;
   padding-bottom: 40px;
+  -webkit-box-shadow: 1px 1px 5px #061323;
+          box-shadow: 1px 1px 5px #061323;
 }
 
 .work-flex {
@@ -744,6 +780,13 @@ h1 {
   margin: 0 auto;
 }
 
+#reset-cube {
+  position: absolute;
+  right: 20%;
+  top: 60px;
+  display: none;
+}
+
 #skills-section {
   min-height: 60vh;
   position: relative;
@@ -751,6 +794,24 @@ h1 {
 
 .skills-wrapper {
   background: #061323;
+  -webkit-box-shadow: 1px 1px 5px #061323;
+          box-shadow: 1px 1px 5px #061323;
+}
+
+.skills-title h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.skills-title h1:after {
+  position: absolute;
+  content: "";
+  top: 55%;
+  right: -45%;
+  height: 6px;
+  width: 100px;
+  border-radius: 5%;
+  background: #F1F1F1;
 }
 
 .toolbox-container {
@@ -758,9 +819,8 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -786,13 +846,26 @@ figcaption {
 
 .contact-title h1 {
   text-shadow: 1px 1px #061323, 2px 2px #061323;
+  position: relative;
+}
+
+.contact-title h1:after {
+  position: absolute;
+  content: "";
+  top: 55%;
+  left: 24%;
+  height: 6px;
+  width: 100px;
+  border-radius: 5%;
+  background: #49738D;
 }
 
 .note {
   width: 500px;
   position: relative;
-  border: 10px solid #061323;
-  padding: 20px;
+  -webkit-box-shadow: 1px 1px 5px #061323;
+          box-shadow: 1px 1px 5px #061323;
+  padding: 40px;
 }
 
 .note h2 {
@@ -803,8 +876,9 @@ figcaption {
 .form-container {
   width: 500px;
   text-align: center;
-  border: 10px solid #061323;
-  padding: 20px;
+  -webkit-box-shadow: 1px 1px 5px #061323;
+          box-shadow: 1px 1px 5px #061323;
+  padding: 40px;
 }
 
 .float-name, .float-email, .float-message {
@@ -878,6 +952,7 @@ figcaption {
   -webkit-animation: hand 2s infinite;
           animation: hand 2s infinite;
   font-size: 2rem;
+  color: #49738D;
 }
 
 .accent {

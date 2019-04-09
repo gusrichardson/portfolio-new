@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -61,10 +62,10 @@
         <section id="about-section">
             <div class="wrapper about-wrapper">
                 <div class="about-title">
-                    <h1 class="lax" data-lax-preset="spinIn-60">About</h1>
+                    <h1 class="lax" data-lax-preset="spinIn-10">About</h1>
                 </div>
                 <div class="about-flex">
-                    <div class="about-cube">
+                    <div class="about-cube" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out">
                         <img src="assets/headshot-square.jpg" alt="a headshot of me, Gus Richardson" id="headshot"
                             class="image-one image-two">
                         <!-- HEADSHOT PHOTO CREDIT - PAM LAU (https://pamlau.com/) -->
@@ -73,7 +74,7 @@
                         <img src="assets/oscar-square.png" alt="a picture of Oscar, my brindle terrier" id="oscar"
                             class="image-two">
                     </div>
-                    <div class="about-text" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                    <div class="about-text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out">
                         <p>Hi, I'm Gus.</p>
                         <br>
                         <p>I'm a front end web dev who's into tackling problems and turning abstract ideas into concrete
@@ -95,10 +96,10 @@
         <section id="work">
             <div class="wrapper work-wrapper">
                 <div class="work-title">
-                    <h1 class="lax" data-lax-preset="spinIn-10">Work</h1>
+                    <h1 class="lax" class="lax" data-lax-preset="spinIn-20">Work</h1>
                     <div class="work-flex">
                         <div class="work-desc" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
-                            <p>Here are a collection of applications I have made either alone or with partners.</p>
+                            <p>Here are a collection of web applications I have made either alone or with partners.</p>
                             <br>
                             <p> Click
                                 the Left or Right sides of the cube to navigate through the projects or click the
@@ -107,8 +108,7 @@
                         <div class="cube-wrapper">
                             <div id="work-cube">
                                 <div class="face zero">
-                                    <video width="270" height="270" autoplay controls src="assets/hidden-vid.mp4"
-                                        id="hidden-vid"></video>
+                                    <video autoplay controls src="assets/hidden-vid.mp4" id="hidden-vid"></video>
                                 </div>
                                 <div class="face one">
                                     <img src="assets/bike.jpg" alt="a screenshot for a bike-share app">
@@ -182,6 +182,7 @@
                             </div>
                         </div>
                     </div>
+                    <button id="reset-cube">Reset Cube</button>
                 </div>
                 <a href="#skills-section" class="scroll-down" aria-label="Navigate to the Skills section"
                     id="light-arrow">
@@ -191,30 +192,30 @@
         <section id="skills-section">
             <div class="wrapper skills-wrapper">
                 <div class="skills-title">
-                    <h1 class="lax" data-lax-preset="spinIn-10">Tool Belt</h1>
+                    <h1 class="lax" data-lax-preset="spinIn-30">Tool Belt</h1>
                 </div>
-                <div class="toolbox-container" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
-                    <figure>
+                <div class="toolbox-container">
+                    <figure data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out">
                         <i class="fab fa-html5" alt="the HTML5 logo"></i>
                         <figcaption>HTML5</figcaption>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out">
                         <i class="fab fa-css3-alt" alt="the CSS 3 logo"></i>
                         <figcaption>CSS3</figcaption>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out">
                         <i class="fab fa-js" alt="the JavaScript logo"></i>
                         <figcaption>JavaScript</figcaption>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out">
                         <i class="devicon-jquery-plain" alt="the jQuery logo"></i>
                         <figcaption>jQuery</figcaption>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out">
                         <i class="fab fa-sass" alt="the SCSS logo"></i>
                         <figcaption>SCSS</figcaption>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out">
                         <i class="fab fa-react" alt="the React logo"></i>
                         <figcaption>React</figcaption>
                     </figure>
@@ -230,7 +231,7 @@
                     <h1 class="lax" data-lax-preset="spinIn-10">Contact</h1>
                 </div>
                 <div class="contact-flex">
-                    <div class="note" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                    <div class="note" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out">
                         <h2>Thank you!</h2>
                         <p>Hi there,</p>
                         <br>
@@ -244,7 +245,8 @@
                         <p><span class="accent">Mobile:</span> 647-379-1174</p>
 
                     </div>
-                    <div class="form-container" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out">
+                    <div class="form-container" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-out">
                         <form action="http://www.focuspocus.io/magic/a2f64bf95168a0cda50ad753eab8ea9c" class="floatForm"
                             method="POST">
                             <h2 id="form-title">Get in Touch</h2>
@@ -257,7 +259,7 @@
                                 <label for="user-email" id="email-label">Your e-mail</label>
                             </div>
                             <div class="float-message">
-                                <textarea name="userNote" id="user-note" cols="28" rows="10"
+                                <textarea name="userNote" id="user-note" cols="28" rows="9"
                                     placeholder="Write message"></textarea>
                                 <label for="user-note">Write message</label>
                             </div>

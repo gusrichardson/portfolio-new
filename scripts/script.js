@@ -46,6 +46,7 @@ myApp.rotateProjects = (degrees) => {
 
 myApp.steerCube = function () {
     let counter = 0;
+    let secret = 0;
     $('.steer-left').on('click', function () {
         counter -= 90;
         let rotation = `rotateY(${counter}deg)`;
@@ -57,9 +58,15 @@ myApp.steerCube = function () {
         $('#work-cube').css({ 'transform': rotation })
     })
     $('.steer-top').on('click', function () {
+        secret += 1;
+        if (secret <= 1) {
+            alert(`You've discovered the hidden video!`)
+        }
         $('#work-cube').css({ transform: "rotateX(90deg)" });
+        $('#reset-cube').css({ display: 'block' });
     })
-    $('.zero').on('click', function () {
+    $('#reset-cube').on('click', function () {
+        $(this).css({ display: "none" });
         $('#work-cube').css({ transform: "rotateX(0deg)" });
     })
     //Adapted from a CodePen by James Garrett https://codepen.io/jamesgarrett/pen/ZaqJLE
