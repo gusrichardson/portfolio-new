@@ -14,6 +14,10 @@
     background: $lightblue;
     border: 10px solid $blue;
     padding: 20px;
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
 .form-container {
@@ -21,6 +25,7 @@
     text-align: center;
     border: 10px solid $blue;
     background: $lightblue;
+    padding: 20px;
     //  h2 {
     //     position: absolute;
     //     top: -50px;
@@ -96,21 +101,32 @@
 #hand {
     position: absolute;
     animation: hand 2s infinite;
-    font-size: 4rem;
+    font-size: 2rem;
     // color: $accent;
+}
+
+.accent {
+    color: $accent;
+    font-weight: 700;
 }
 
 @keyframes hand {
     0% {
-        bottom: 120px;
+        bottom: 60px;
         left: 42%;
+        // top: 240px;
+        // right: 5%;
     }
     50% {
-        bottom: 120px;
+        bottom: 60px;
         left: 40%;
+        // top: 240px;
+        // right: 7%;
     }
     100% {
-        bottom: 120px;
+        bottom: 60px;
         left: 42%;
+        // top: 240px;
+        // right: 5%;
     }
 };
