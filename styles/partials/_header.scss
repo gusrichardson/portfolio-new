@@ -1,7 +1,6 @@
 header {
     min-height: 100vh;
     // border: 2px solid blue;
-    background: $dark;
     // background: $dark;
     // background: $lightblue;
     position: relative;
@@ -34,17 +33,17 @@ header {
 
 #particles-js {
     min-height: 400px;
-    max-height: 800px;
+    max-height: 550px;
     display: flex;
     overflow: hidden;
 }
 
 .header-wrapper {
-    height: 100vh;
+    // height: 100vh;
     background: $dark;
     //  background: linear-gradient(to right,  RGBA(241, 241, 241, 0.1), RGBA(6, 19, 35, 0.7));
-    // min-height: 400px;
-    // max-height: 600px;
+    min-height: 400px;
+    max-height: 600px;
     // RGBA(73, 115, 141, 0.8)
     // RGB(6, 19, 35)
     width: 100vw;

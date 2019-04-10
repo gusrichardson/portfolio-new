@@ -334,7 +334,7 @@ button:hover {
 }
 
 .nav-bar {
-  height: 0px;
+  height: 80px;
   overflow: hidden;
 }
 
@@ -497,7 +497,6 @@ button:hover {
 
 header {
   min-height: 100vh;
-  background: #061323;
   position: relative;
 }
 
@@ -539,7 +538,7 @@ header {
 
 #particles-js {
   min-height: 400px;
-  max-height: 800px;
+  max-height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,8 +546,9 @@ header {
 }
 
 .header-wrapper {
-  height: 100vh;
   background: #061323;
+  min-height: 400px;
+  max-height: 600px;
   width: 100vw;
   text-align: center;
   position: relative;
