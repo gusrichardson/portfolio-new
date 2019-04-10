@@ -3,6 +3,7 @@
     position: relative;
     // background: $lightblue;
     background: $white;
+    // background: $dark;
 }
 
 .about-flex {
@@ -11,6 +12,7 @@
     justify-content: space-between;
     // background: $lightblue;
     background: $white;
+    // background: $dark;
 }
 
 #toggle-oscar, #toggle-giorgi {
@@ -20,6 +22,7 @@
 
 .about-title {
     background: $white;
+    // background: $dark;
     // background: $lightblue;
     // position: relative;
     // display: inline-block;
@@ -127,14 +130,18 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      box-shadow: 1px 1px 5px $dark;
+    //   border: 2px solid $lightblue;
   }
   .about-text {
       width: 100%;
       box-shadow: none;
       padding-top: 0;
+      border: none;
   }
   .about-cube, .about-cube img {
       border-radius: 50%;
+      border: none;
   }
      .about-title h1:after {
         left: 27%;

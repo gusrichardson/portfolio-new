@@ -122,3 +122,19 @@ button:hover {
         top: -80px;
     }
 }
+
+@media screen and (max-width: 900px){
+   .wrapper {
+       margin: 0 50px;
+       width: calc(100% - 100px);
+   }
+
+}
+
+@media screen and (max-width: 500px){
+   .wrapper {
+       margin: 0 10px;
+       width: calc(100% - 20px);
+   }
+
+}

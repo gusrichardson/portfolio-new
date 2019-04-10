@@ -306,6 +306,20 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper {
+    margin: 0 50px;
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+  }
+}
+
 .nav-bar {
   height: 80px;
   overflow: hidden;
@@ -475,7 +489,7 @@ header {
 }
 
 .social {
-  width: 80px;
+  width: 60px;
   height: 180px;
   position: fixed;
   z-index: 20;
@@ -578,12 +592,6 @@ header {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .wrapper {
-    margin: 0 50px;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .title-text h1 {
     font-size: 3rem;
@@ -593,7 +601,28 @@ header {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    height: 0;
+  }
+  .header-wrapper {
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 1500px;
+    border: none;
+    border-radius: 0px;
+  }
+  .title-text h1 {
+    margin: 0px 20px;
+  }
+  .title-text h2 {
+    margin: 0px 20px 20px;
+  }
+  .social {
+    display: none;
+  }
   .title-text {
     padding: 10px;
   }
@@ -738,15 +767,19 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-shadow: 1px 1px 5px #061323;
+            box-shadow: 1px 1px 5px #061323;
   }
   .about-text {
     width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
     padding-top: 0;
+    border: none;
   }
   .about-cube, .about-cube img {
     border-radius: 50%;
+    border: none;
   }
   .about-title h1:after {
     left: 27%;
@@ -1050,7 +1083,13 @@ header {
     width: 100%;
   }
   .cube-wrapper {
-    margin: 100px 0px 20px;
+    margin: 100px 20px 20px;
+    width: calc(100% - 40px);
+    -webkit-perspective: 900px;
+            perspective: 900px;
+  }
+  #work-cube {
+    right: 0px;
   }
   #reset-cube {
     top: 500px;
@@ -1079,6 +1118,7 @@ header {
 #skills-section {
   min-height: 60vh;
   position: relative;
+  background: #F1F1F1;
 }
 
 .skills-wrapper {
@@ -1161,6 +1201,11 @@ figcaption {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: #F1F1F1;
+}
+
+#contact-section {
+  background: #F1F1F1;
 }
 
 .contact-title h1 {
@@ -1355,7 +1400,6 @@ figcaption {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 2px solid #A9C9DA;
     -webkit-box-shadow: 1px 1px 5px #061323;
             box-shadow: 1px 1px 5px #061323;
   }

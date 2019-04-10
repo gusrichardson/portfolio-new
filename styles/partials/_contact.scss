@@ -1,6 +1,11 @@
 .contact-flex {
     display: flex;
     justify-content: space-between;
+    background: $white;
+}
+
+#contact-section {
+    background: $white;
 }
 
 .contact-title h1 {
@@ -178,7 +183,7 @@
 @media screen and (max-width: 950px) {
     .contact-flex {
         flex-direction: column;
-        border: 2px solid $lightblue;
+        // border: 2px solid $lightblue;
         box-shadow: 1px 1px 5px $dark;
     }
     .note, .form-container {
