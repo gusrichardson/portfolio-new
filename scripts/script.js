@@ -60,7 +60,11 @@ myApp.steerCube = function () {
     $('.steer-top').on('click', function () {
         secret += 1;
         if (secret <= 1) {
-            alert(`You've discovered the hidden video!`)
+            swal({
+                title: "Congratulations!",
+                text: `You've discovered the hidden video.`,
+                icon: "../assets/magnifying.png",
+            });
         }
         $('#work-cube').css({ transform: "rotateX(90deg)" });
         $('#reset-cube').css({ display: 'block' });

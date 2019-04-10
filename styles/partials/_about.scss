@@ -1,18 +1,14 @@
 #about-section {
     min-height: 100vh;
     position: relative;
-    // background: $lightblue;
     background: $white;
-    // background: $dark;
 }
 
 .about-flex {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    // background: $lightblue;
     background: $white;
-    // background: $dark;
 }
 
 #toggle-oscar, #toggle-giorgi {
@@ -22,15 +18,10 @@
 
 .about-title {
     background: $white;
-    // background: $dark;
-    // background: $lightblue;
-    // position: relative;
-    // display: inline-block;
     h1 {
         text-shadow: 1px 1px $dark,
         2px 2px $dark;
         position: relative;
-        // display: inline-block;
         &:after {
             position: absolute;
             content: "";
@@ -47,11 +38,9 @@
 .about-text {
     width: calc(100% - 450px);
     background: $white;
-    // border: 2px solid $lightblue;
     padding: 40px;
     box-shadow: 1px 1px 5px $dark;
     border-radius: 5px;
-    // background: white;
 }
 
 
@@ -62,13 +51,11 @@
     height: 400px;
     position: relative;
      box-shadow: 1px 1px 5px $dark;
-    // border: 2px solid $accent;
     border-radius: 5px;
     img {
         height: auto;
         width: 100%;
         border-radius: 5px;
-        // border: 2px solid $lightblue;
     }
 }
 
