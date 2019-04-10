@@ -28,7 +28,7 @@
     width: 500px;
     position: relative;
      box-shadow: 1px 1px 5px $dark;
-     border: 2px solid $lightblue;
+    //  border: 2px solid $lightblue;
     padding:40px;
     background: $white;
     border-radius: 5px;
@@ -45,7 +45,7 @@
     padding: 40px;
     background: $white;
     border-radius: 5px;
-    border: 2px solid $lightblue;
+    // border: 2px solid $lightblue;
 }
 
 .contact-wrapper {
@@ -127,6 +127,10 @@
 .accent {
     color: $accent;
     font-weight: 700;
+}
+
+#white {
+    color: white;
 }
 
 @keyframes hand {

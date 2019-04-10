@@ -47,7 +47,7 @@
 .about-text {
     width: calc(100% - 450px);
     background: $white;
-    border: 2px solid $lightblue;
+    // border: 2px solid $lightblue;
     padding: 40px;
     box-shadow: 1px 1px 5px $dark;
     border-radius: 5px;
@@ -68,7 +68,7 @@
         height: auto;
         width: 100%;
         border-radius: 5px;
-        border: 2px solid $lightblue;
+        // border: 2px solid $lightblue;
     }
 }
 

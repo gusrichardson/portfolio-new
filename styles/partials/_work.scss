@@ -28,9 +28,10 @@
 .work-wrapper {
     perspective: 200px;
     background: $dark;
+    // background: linear-gradient(to right,  RGBA(241, 241, 241, 0.1), RGBA(73, 115, 141, 0.5));
     padding-bottom: 40px;
     box-shadow: 1px 1px 5px $dark;
-    border: 2px solid $accent;
+    // border: 2px solid $accent;
 }
 
 .work-flex {

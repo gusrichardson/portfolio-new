@@ -255,6 +255,14 @@ button:hover {
   color: #DB5656;
 }
 
+.dark {
+  color: #061323;
+}
+
+.scroll-down .white {
+  color: #F1F1F1;
+}
+
 .scroll-down {
   position: absolute;
   bottom: 0;
@@ -268,6 +276,11 @@ button:hover {
 
 .scroll-down i {
   position: absolute;
+  z-index: 12;
+}
+
+#white {
+  color: white;
 }
 
 .scroll-down:focus i {
@@ -321,7 +334,7 @@ button:hover {
 }
 
 .nav-bar {
-  height: 80px;
+  height: 0px;
   overflow: hidden;
 }
 
@@ -484,7 +497,7 @@ button:hover {
 
 header {
   min-height: 100vh;
-  background: #F1F1F1;
+  background: #061323;
   position: relative;
 }
 
@@ -526,7 +539,7 @@ header {
 
 #particles-js {
   min-height: 400px;
-  max-height: 500px;
+  max-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,15 +547,13 @@ header {
 }
 
 .header-wrapper {
-  min-height: 400px;
-  max-height: 600px;
+  height: 100vh;
+  background: #061323;
+  width: 100vw;
   text-align: center;
   position: relative;
-  background: #061323;
-  border-radius: 10px;
   -webkit-box-shadow: 1px 1px 10px #061323;
           box-shadow: 1px 1px 10px #061323;
-  border: 2px solid #DB5656;
 }
 
 .header-wrapper .particles-overlay {
@@ -563,7 +574,7 @@ header {
 }
 
 .title-text {
-  padding: 0px 0px 40px 40px;
+  padding: 0px 0px 60px 60px;
   background: #061323;
   -webkit-box-shadow: 1px 1px 40px 40px #061323;
           box-shadow: 1px 1px 40px 40px #061323;
@@ -573,7 +584,7 @@ header {
 .title-text h1 {
   color: #DB5656;
   font-size: 3.5rem;
-  text-shadow: 1px 1px #F1F1F1, 2px 2px #F1F1F1;
+  text-shadow: 1px 1px #F1F1F1;
 }
 
 .title-text h2 {
@@ -683,7 +694,6 @@ header {
 .about-text {
   width: calc(100% - 450px);
   background: #F1F1F1;
-  border: 2px solid #A9C9DA;
   padding: 40px;
   -webkit-box-shadow: 1px 1px 5px #061323;
           box-shadow: 1px 1px 5px #061323;
@@ -703,7 +713,6 @@ header {
   height: auto;
   width: 100%;
   border-radius: 5px;
-  border: 2px solid #A9C9DA;
 }
 
 #giorgi {
@@ -860,7 +869,6 @@ header {
   padding-bottom: 40px;
   -webkit-box-shadow: 1px 1px 5px #061323;
           box-shadow: 1px 1px 5px #061323;
-  border: 2px solid #DB5656;
 }
 
 .work-flex {
@@ -1122,10 +1130,9 @@ header {
 }
 
 .skills-wrapper {
-  background: #061323;
   -webkit-box-shadow: 1px 1px 5px #061323;
           box-shadow: 1px 1px 5px #061323;
-  border: 2px solid #DB5656;
+  background: #061323;
 }
 
 .skills-title h1 {
@@ -1229,7 +1236,6 @@ figcaption {
   position: relative;
   -webkit-box-shadow: 1px 1px 5px #061323;
           box-shadow: 1px 1px 5px #061323;
-  border: 2px solid #A9C9DA;
   padding: 40px;
   background: #F1F1F1;
   border-radius: 5px;
@@ -1248,7 +1254,6 @@ figcaption {
   padding: 40px;
   background: #F1F1F1;
   border-radius: 5px;
-  border: 2px solid #A9C9DA;
 }
 
 .float-name, .float-email, .float-message {
@@ -1329,6 +1334,10 @@ figcaption {
 .accent {
   color: #DB5656;
   font-weight: 700;
+}
+
+#white {
+  color: white;
 }
 
 @-webkit-keyframes hand {
@@ -1464,7 +1473,6 @@ footer {
   background: #061323;
   text-align: center;
   padding-top: 25px;
-  border-top: 2px solid #DB5656;
 }
 
 footer p {

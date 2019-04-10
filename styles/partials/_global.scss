@@ -86,6 +86,14 @@ button:hover {
     color: $accent;
 }
 
+.dark {
+    color: $dark;
+}
+
+.scroll-down .white {
+    color: $white;
+}
+
 .scroll-down {
     position: absolute;
     bottom: 0;
@@ -96,7 +104,12 @@ button:hover {
     transition: all 0.3s;
     i {
         position: absolute;
+        z-index: 12;
     }
+}
+
+#white {
+    color: white;
 }
 
 .scroll-down:focus i {
@@ -110,6 +123,7 @@ button:hover {
 #light-arrow {
     color: $white;
 }
+
 
 @keyframes down {
     0% {
