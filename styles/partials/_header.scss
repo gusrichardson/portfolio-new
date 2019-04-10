@@ -2,6 +2,7 @@ header {
     min-height: 100vh;
     // border: 2px solid blue;
     background: $white;
+    // background: $lightblue;
     position: relative;
 }
 
@@ -94,6 +95,35 @@ header {
 @media screen and (max-width: 900px) {
     .wrapper {
         margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title-text {
+        h1 {
+            font-size: 3rem;
+        }
+        .first-name {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title-text {
+        // text-align: center;
+        padding: 10px;
+        // align-self: center;
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+        .first-name {
+            font-size: 3rem;
+            line-height: 2.5rem;
+        }
     }
 }
 

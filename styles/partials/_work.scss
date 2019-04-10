@@ -1,6 +1,7 @@
 #work {
     min-height: 100vh;
     position: relative;
+    // background: $lightblue;
     background: $white;
     h1 {
         // color: $white;
@@ -14,7 +15,7 @@
             position: absolute;
             content: "";
             top: 55%;
-            left: 18%;
+            left: 180px;
             height: 6px;
             width: 100px;
             border-radius: 5%;
@@ -188,3 +189,119 @@
     top: 60px;
     display: none;
 }
+
+
+@media screen and (max-width: 980px) {
+    .cube-wrapper {
+        perspective: 800px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .cube-wrapper {
+        perspective: 800px;
+    }
+    #work-cube {
+        height: 250px;
+        width: 250px;
+    }
+    .steer-cube {
+        height: 160px;
+    }
+    .face {
+        height: 225px;
+        width: 225px;
+    }
+    .zero {
+    -webkit-transform: rotateX(90deg) translateZ(112.5px) rotate(180deg);
+    transform: rotateX(90deg) translateZ(112.5px) rotate(180deg);
+    }
+    .one {
+    -webkit-transform: translateZ(112.5px);
+    transform: translateZ(112.5px);
+    }
+
+    .two {
+    -webkit-transform: rotateY(90deg) translateZ(112.5px);
+    transform: rotateY(90deg) translateZ(112.5px);
+    }
+
+    .three {
+     -webkit-transform: rotateY(180deg) translateZ(112.5px);
+    transform: rotateY(180deg) translateZ(112.5px);
+    }
+
+    .four {
+    -webkit-transform: rotateY(-90deg) translateZ(112.5px);
+    transform: rotateY(-90deg) translateZ(112.5px);
+    }
+
+    .five {
+     -webkit-transform: rotateX(-90deg) translateZ(112.5px) rotate(180deg);
+    transform: rotateX(-90deg) translateZ(112.5px) rotate(180deg);
+    background: transparent;
+    }
+    .button-container button {
+        width: 85px;
+        margin: 10px 5px;
+    }
+    #reset-cube {
+        right: 18%;
+        // left: 0;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .work-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-desc {
+        width: 100%;
+    }
+    .cube-wrapper {
+        margin: 100px 0px 20px;
+    }
+    #reset-cube {
+        top: 500px;
+        left: 0;
+        // right: 38%;
+        // right: 214px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    #reset-cube {
+        // top: 350px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .cube-wrapper {
+        margin: 100px 0px 20px;
+    }
+    #work h1 {
+        text-align: center;
+    }
+    #work h1:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px){
+    #reset-cube {
+        bottom: 0;
+        // top: 390px;
+        // right: 25%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #reset-cube {
+        // top: 435px;
+        // left: 0;
+        // right: 23%;
+    }
+}
+
+

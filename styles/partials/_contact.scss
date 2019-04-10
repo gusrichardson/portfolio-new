@@ -24,6 +24,8 @@
     position: relative;
      box-shadow: 1px 1px 5px $dark;
     padding:40px;
+    background: $white;
+    border-radius: 5px;
     h2 {
         text-align: center;
         margin-bottom: 15px;
@@ -35,6 +37,8 @@
     text-align: center;
      box-shadow: 1px 1px 5px $dark;
     padding: 40px;
+    background: $white;
+    border-radius: 5px;
 }
 
 .contact-wrapper {

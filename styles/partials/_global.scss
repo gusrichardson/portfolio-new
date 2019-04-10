@@ -10,6 +10,8 @@ html {
 body {
     line-height: 1.6;
     background: $white;
+    overflow-x: hidden;
+    // background: $lightblue;
 }
 
 .wrapper {
@@ -17,6 +19,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 5px;
 }
 
 h1 {
