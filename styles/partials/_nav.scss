@@ -113,6 +113,47 @@
     }
 }
 
+@media screen and (max-width: 800px){
+   .nav-list li {
+       margin: 20px;
+   }
+
+}
+
+@media screen and (max-width: 600px){
+   .nav-list li {
+       margin: 20px 10px;
+   }
+
+}
+
+@media screen and (max-width: 520px){
+    .nav-list {
+        padding-left: 20px;
+        text-align: left;
+    }
+   .nav-list li {
+       font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 490px){
+   .nav-list li {
+       font-size: 0.8rem;
+       margin: 20px 7px;
+   }
+}
+
+@media screen and (max-width: 400px){
+    .nav-list {
+        padding-left: 10px;
+    }
+   .nav-list li {
+       font-size: 0.7rem;
+       margin: 20px 5px;
+   }
+}
+
 
 
 
