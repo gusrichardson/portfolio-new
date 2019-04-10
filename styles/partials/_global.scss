@@ -98,19 +98,17 @@ button:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    // text-align: center;
     color: $dark;
     font-size: 2rem;
     transition: all 0.3s;
     i {
         position: absolute;
         z-index: 12;
+        left: calc(50% - 20px);
     }
 }
 
-#white {
-    color: white;
-}
 
 .scroll-down:focus i {
     border: 2px dotted $blue;

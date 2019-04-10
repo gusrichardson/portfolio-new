@@ -1,8 +1,5 @@
 header {
     min-height: 100vh;
-    // border: 2px solid blue;
-    // background: $dark;
-    // background: $lightblue;
     position: relative;
 }
 
@@ -12,7 +9,6 @@ header {
     position: fixed;
     z-index: 20;
     top: calc(50% - 90px);
-    // border: 2px solid red;
     ul {
         height: 100%;
         display: flex;
@@ -39,23 +35,14 @@ header {
 }
 
 .header-wrapper {
-    // height: 100vh;
     background: $dark;
-    //  background: linear-gradient(to right,  RGBA(241, 241, 241, 0.1), RGBA(6, 19, 35, 0.7));
     min-height: 400px;
     max-height: 600px;
-    // RGBA(73, 115, 141, 0.8)
-    // RGB(6, 19, 35)
-    width: 100vw;
+    // width: 100vw;
     text-align: center;
     position: relative;
-    // background: $white;
-    // border-radius: 10px;
     box-shadow: 1px 1px 10px $dark;
-    // border: 2px solid $accent;
     .particles-overlay {
-        // background: linear-gradient(to right,  RGBA(241, 241, 241, 0.1), RGBA(73, 115, 141, 0.8));
-        // background: $dark;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -65,13 +52,11 @@ header {
         bottom: 0;
         left: 0;
         display: flex;
-        // justify-content: center;
         align-items: end;
     }
 }
 
 .title-text {
-    // border: 1px solid red;
     padding: 0px 0px 60px 60px;
     background: $dark;
     box-shadow: 1px 1px 40px 40px $dark;
@@ -120,11 +105,15 @@ header {
     .header-wrapper {
         width: 100%;
         margin: 0;
-        min-height: 100vh;
+        // min-height: 80vh;
         height: 100vh;
         max-height: 1500px;
         border: none;
         border-radius: 0px;
+    }
+
+    header .scroll-down {
+        bottom: 80px;
     }
 
     .title-text {
@@ -138,19 +127,10 @@ header {
 
     .social {
         display: none;
-        // top: calc(100% - 100px);
-        // width: 100%;
-        // ul {
-        // flex-direction: row;
-        // width: 100%;
-        // border: 2px solid red;
-        // }
     }
 
     .title-text {
-        // text-align: center;
         padding: 10px;
-        // align-self: center;
         h1 {
             font-size: 2rem;
         }

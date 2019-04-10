@@ -28,22 +28,17 @@
 .work-wrapper {
     perspective: 200px;
     background: $dark;
-    // background: linear-gradient(to right,  RGBA(241, 241, 241, 0.1), RGBA(73, 115, 141, 0.5));
     padding-bottom: 40px;
     box-shadow: 1px 1px 5px $dark;
-    // border: 2px solid $accent;
 }
 
 .work-flex {
     display: flex;
     width: 100%;
-    // border: 4px solid red;
 }
 
 .work-desc {
     width: 50%;
-    // padding: 0px 40px;
-    // border: 4px solid cornflowerblue;
     p {
         color: $accent;
     }
@@ -52,25 +47,20 @@
 .cube-wrapper {
     perspective: 600px;
     width: 50%;
-    // border: 2px solid red;
 }
 
 #work-cube {
     position: relative;
     bottom: 30px;
     right: -20px;
-    // height: 400px;
     height: 300px;
-    // width: 400px;
     width: 300px;
     margin: 0 auto;
-    // background: grey;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: all 2s;
     transform-style: preserve-3d;
     transition: all 2s;
     transform: rotateY(45deg);
-    // perspective: 8000px;
 }
 
 #call-to-action {
@@ -278,9 +268,9 @@
     }
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 600px){
     #reset-cube {
-        // top: 350px;
+        top: 400px;
     }
 }
 
@@ -298,7 +288,7 @@
 
 @media screen and (max-width: 470px){
     #reset-cube {
-        bottom: 0;
+        top: 430px;
         // top: 390px;
         // right: 25%;
     }

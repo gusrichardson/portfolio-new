@@ -267,7 +267,6 @@ button:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: center;
   color: #061323;
   font-size: 2rem;
   -webkit-transition: all 0.3s;
@@ -277,10 +276,7 @@ button:hover {
 .scroll-down i {
   position: absolute;
   z-index: 12;
-}
-
-#white {
-  color: white;
+  left: calc(50% - 20px);
 }
 
 .scroll-down:focus i {
@@ -549,7 +545,6 @@ header {
   background: #061323;
   min-height: 400px;
   max-height: 600px;
-  width: 100vw;
   text-align: center;
   position: relative;
   -webkit-box-shadow: 1px 1px 10px #061323;
@@ -619,11 +614,13 @@ header {
   .header-wrapper {
     width: 100%;
     margin: 0;
-    min-height: 100vh;
     height: 100vh;
     max-height: 1500px;
     border: none;
     border-radius: 0px;
+  }
+  header .scroll-down {
+    bottom: 80px;
   }
   .title-text h1 {
     margin: 0px 20px;
@@ -1105,6 +1102,12 @@ header {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #reset-cube {
+    top: 400px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .cube-wrapper {
     margin: 100px 0px 20px;
@@ -1119,7 +1122,7 @@ header {
 
 @media screen and (max-width: 470px) {
   #reset-cube {
-    bottom: 0;
+    top: 430px;
   }
 }
 
@@ -1336,8 +1339,30 @@ figcaption {
   font-weight: 700;
 }
 
-#white {
-  color: white;
+.social-mobile {
+  width: 100%;
+  margin-top: 10px;
+  display: none;
+}
+
+.social-mobile ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+.social-mobile ul a {
+  color: #49738D;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.social-mobile ul a:hover {
+  color: #DB5656;
 }
 
 @-webkit-keyframes hand {
@@ -1465,6 +1490,28 @@ figcaption {
   }
   .contact-title h1:after {
     display: none;
+  }
+  .social-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-container {
+    padding: 0px;
+  }
+  form {
+    width: 100%;
+    padding: 0;
+  }
+  .float-name, .float-email, .float-message {
+    width: 100%;
+  }
+  .float-name input, .float-email input, .float-message input {
+    width: 95%;
+  }
+  .float-name textarea, .float-email textarea, .float-message textarea {
+    max-width: 95%;
   }
 }
 

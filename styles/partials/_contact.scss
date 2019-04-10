@@ -129,8 +129,23 @@
     font-weight: 700;
 }
 
-#white {
-    color: white;
+.social-mobile {
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+   ul {
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       font-size: 1.5rem;
+       a {
+           color: $blue;
+           transition: all 0.3s;
+       }
+       a:hover {
+           color: $accent;
+       }
+   }
 }
 
 @keyframes hand {
@@ -244,6 +259,29 @@
     }
     .contact-title h1:after {
         display: none;
+    }
+    .social-mobile {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .form-container {
+        padding: 0px;
+    }
+    form {
+        width: 100%;
+        padding: 0;
+    }
+        .float-name, .float-email, .float-message {
+         width: 100%;
+         input {
+             width: 95%;
+         }
+         textarea {
+             max-width: 95%;
+         }
     }
 
 }
