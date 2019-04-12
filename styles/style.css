@@ -560,12 +560,6 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
 }
 
 .title-text {
@@ -574,6 +568,8 @@ header {
   -webkit-box-shadow: 1px 1px 40px 40px #061323;
           box-shadow: 1px 1px 40px 40px #061323;
   text-align: left;
+  position: absolute;
+  bottom: 0;
 }
 
 .title-text h1 {
